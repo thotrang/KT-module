@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text= 'Live reload enabled';
+        function kiemTra(text){
+            let count=0;
+            for(let i=0;i<text.length;i++){
+                if(text[i]=='a'||text[i]=='i'||text[i]=='o'||text[i]=='e'||text[i]=='u'){
+                    count++;
+                }
+            }if(count==0){
+                count=false;
+            }
+            return count;
+        }
+        console.log(kiemTra(text));
+    </script>
+</body>
+</html>
